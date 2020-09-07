@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <el-header height="50px">
+    <!-- <el-header height="50px">
       <TopHeader></TopHeader>
     </el-header>
     <el-container>
@@ -10,17 +10,19 @@
       <el-main>
          <router-view></router-view>
       </el-main>
-    </el-container>
+    </el-container> -->
+
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import TopHeader from './components/TopHeader.vue';
-import LeftMenu from './components/LeftMenu.vue';
+// import TopHeader from './components/TopHeader.vue';
+// import LeftMenu from './components/LeftMenu.vue';
 
 export default {
   name: 'App',
-  components: { TopHeader, LeftMenu }
+  // components: { TopHeader, LeftMenu }
 }
 </script>
 
@@ -30,6 +32,17 @@ export default {
 html,body {
   margin: 0;
   padding: 0;
+}
+
+input {
+  background-color: rgba(0,0,0,0);
+  border: none;
+  padding: 0;
+  margin: 0;
+  &:focus {
+    outline:none;
+    border: none;
+  }
 }
 
 #app {
