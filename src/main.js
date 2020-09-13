@@ -3,6 +3,9 @@ import App from './App.vue';
 import router from './router.js';
 import store from './store';
 
+import 'animate.css';
+
+
 import {
   Container,
   Header,

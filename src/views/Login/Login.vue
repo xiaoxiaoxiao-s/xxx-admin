@@ -1,7 +1,6 @@
 <template>
   <div class="login">
-    <div class="content animated fadeInRight">
-
+    <div class="content animate__animated animate__fadeInRight">
       <div class="import">
         <span>Account :</span>
         <input type="text" v-model="account"/>
@@ -19,12 +18,17 @@
 
       <div class="btn">登录</div>
     </div>
+
+    <Cat/>
   </div>
 </template>
 
 <script>
+import Cat from '@/components/Cat/Cat.vue';
+
 export default {
-  name: "Login"
+  name: "Login",
+  components: { Cat }
 }
 </script>
 
@@ -68,10 +72,17 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
     span {
       color: #fff;
       font-size: 14px;
+      cursor:pointer;
     }
+  }
+  .btn {
+    color: #fff;
+    font-size: 14px;
+    cursor:pointer;
   }
 }
 </style>
